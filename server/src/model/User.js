@@ -20,12 +20,7 @@ const UserSchema = new mongoose.Schema(
       min: 2,
       max: 100,
     },
-    city: String,
-    state: String,
-    country: String,
-    occupation: String,
     phoneNumber: String,
-    transactions: Array,
     role: {
       type: String,
       enum: ["user", "admin", "superadmin"],

@@ -10,12 +10,7 @@ export const signup = async (req, res) => {
     name,
     email,
     password,
-    city,
-    state,
-    country,
-    occupation,
     phoneNumber,
-    transactions,
     role,
   } = req.body;
 
@@ -31,12 +26,7 @@ export const signup = async (req, res) => {
       email,
       password: hashedPassword,
       name,
-      city,
-      state,
-      country,
-      occupation,
       phoneNumber,
-      transactions,
       role,
     });
 
@@ -53,12 +43,7 @@ export const signup = async (req, res) => {
       email: result.email,
       password: result.password,
       name: result.name,
-      city: result.city,
-      state: result.state,
-      country: result.country,
-      occupation: result.occupation,
       phoneNumber: result.phoneNumber,
-      transactions: result.transactions,
       role: result.role,
     };
 
